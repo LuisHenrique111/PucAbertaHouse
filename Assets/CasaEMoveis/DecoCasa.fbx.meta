@@ -15,8 +15,8 @@ ModelImporter:
       name: MDFProntos2
     second: {fileID: 2100000, guid: 4fd1caee3f8e07640981eaec123f7901, type: 2}
   materials:
-    materialImportMode: 1
-    materialName: 0
+    materialImportMode: 2
+    materialName: 2
     materialSearch: 1
     materialLocation: 1
   animations:
