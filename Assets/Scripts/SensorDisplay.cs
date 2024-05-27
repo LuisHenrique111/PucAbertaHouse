@@ -40,7 +40,7 @@ namespace PUC.House
             if (text == null)
                 return;
             
-            text.text = string.Format(format, value);
+            text.text = string.Format(format, value/100);
         }
     }
     
