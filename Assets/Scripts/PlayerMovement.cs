@@ -21,7 +21,7 @@ namespace PUC.House
         private RaycastHit _hit;
         public XRRayInteractor rayInteractor;
         
-        private Vector2 _currentRotation;
+        public Vector2 _currentRotation;
         public float maxYAngle = 80f;
 
         private void OnEnable()
@@ -64,7 +64,7 @@ namespace PUC.House
             _currentRotation.y -= _lookInput.y * lookSpeed;
             _currentRotation.x = Mathf.Repeat(_currentRotation.x, 360);
             _currentRotation.y = Mathf.Clamp(_currentRotation.y, -maxYAngle, maxYAngle);
-            Camera.main!.transform.localRotation = Quaternion.Euler(_currentRotation.y,_currentRotation.x,0);
+            Camera.main!.transform.rotation = Quaternion.Euler(_currentRotation.y,_currentRotation.x,0);
         }
 
         private void ApplyGravity()
