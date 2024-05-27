@@ -103,5 +103,10 @@ namespace PUC.House
                 }
             }
         }
+        public void Quit(){
+            if(Input.GetKeyDown(KeyCode.Q)){
+                Application.Quit();
+            }
+        }
     }
 }

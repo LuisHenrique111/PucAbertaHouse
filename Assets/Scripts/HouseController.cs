@@ -23,9 +23,11 @@ namespace PUC.House
             _dbReference.Reference.ValueChanged += _ValueChanged;
         }
         
-        void OnDisable()
+        public void OnDisable()
         {
+            
             _dbReference.Reference.ValueChanged -= _ValueChanged;
+            Debug.Log("Valor do firebase: "+_dbReference.Reference);
         }
         
         private void _ValueChanged(object sender, ValueChangedEventArgs args)
@@ -74,5 +76,7 @@ namespace PUC.House
 
             return (T)snapshot.Child(key).Value;
         }
+
+        
     }
 }
