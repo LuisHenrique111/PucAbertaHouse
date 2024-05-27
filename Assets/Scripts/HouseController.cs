@@ -17,10 +17,11 @@ namespace PUC.House
         {
             FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(_ => {
                 Debug.Log("Firebase Initialized.");
+                _dbReference = FirebaseDatabase.DefaultInstance.RootReference;
+                _dbReference.Reference.ValueChanged += _ValueChanged;
             });
             
-            _dbReference = FirebaseDatabase.DefaultInstance.RootReference;
-            _dbReference.Reference.ValueChanged += _ValueChanged;
+            
         }
         
         public void OnDisable()
