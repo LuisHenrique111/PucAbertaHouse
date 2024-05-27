@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.PUC.HouseIA</string>
+	<string>com.PUC.EngCompJogos</string>
 	<key>PROJECT_ID</key>
 	<string>casapucvr</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,7 +25,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:151280484885:ios:21f9c79f64f31ef612441c</string>
+	<string>1:151280484885:ios:7993ae04ac14e92c12441c</string>
 	<key>DATABASE_URL</key>
 	<string>https://casapucvr-default-rtdb.firebaseio.com</string>
 </dict>
